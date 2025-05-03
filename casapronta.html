@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer - Kimetsu no Yaiba</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DEMON SLAYER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#characters">Personagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Kimetsu no Yaiba</h1>
+                    <p>Junte-se à Caçada de Demônios</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Torne-se um Caçador</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/tanjiro.png" alt="Tanjiro" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre a Série</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Demon Slayer: Kimetsu no Yaiba é uma série de mangá japonesa escrita e ilustrada por Koyoharu Gotouge. A história segue Tanjiro Kamado, um jovem que se torna um caçador de demônios depois que sua família é massacrada e sua irmã mais nova, Nezuko, é transformada em um demônio.</p>
+                    <p>A série foi adaptada para um anime pelo estúdio Ufotable, com a primeira temporada sendo exibida entre abril e setembro de 2019.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VQGCKyvzIM4" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Personagens Principais</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card character-card">
+                        <img src="images/tanjiro-card.jpg" class="card-img-top" alt="Tanjiro">
+                        <div class="card-body">
+                            <h5 class="card-title">Tanjiro Kamado</h5>
+                            <p class="card-text">Protagonista da série e membro dos Caçadores de Demônios.</p>
+                            <button class="btn btn-outline-primary btn-sm character-btn" data-character="tanjiro">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card character-card">
+                        <img src="images/nezuko-card.jpg" class="card-img-top" alt="Nezuko">
+                        <div class="card-body">
+                            <h5 class="card-title">Nezuko Kamado</h5>
+                            <p class="card-text">Irmã mais nova de Tanjiro que foi transformada em demônio.</p>
+                            <button class="btn btn-outline-primary btn-sm character-btn" data-character="nezuko">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card character-card">
+                        <img src="images/zenitsu-card.jpg" class="card-img-top" alt="Zenitsu">
+                        <div class="card-body">
+                            <h5 class="card-title">Zenitsu Agatsuma</h5>
+                            <p class="card-text">Caçador de Demônios e companheiro de Tanjiro.</p>
+                            <button class="btn btn-outline-primary btn-sm character-btn" data-character="zenitsu">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Interessado em saber mais?</h2>
+            <p class="lead mb-5">Entre em contato conosco para receber mais informações sobre o mundo de Demon Slayer!</p>
+            <button id="contact-btn" class="btn btn-primary btn-lg">Entrar em Contato</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Demon Slayer - Kimetsu no Yaiba. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Character Modal -->
+    <div class="modal fade" id="characterModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Detalhes do Personagem</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content will be loaded via JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
