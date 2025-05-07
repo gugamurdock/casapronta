@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demon Slayer - Kimetsu no Yaiba</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
 </head>
 <body>
     <!-- Navbar -->
+    <style>
+body{
+background-color: 
+rgba(63, 47, 47, 0.658);
+
+}
+
+</style>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">DEMON SLAYER</a>
@@ -21,12 +29,11 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#characters">Personagens</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
@@ -37,7 +44,7 @@
                     <a href="#contact" class="btn btn-primary btn-lg">Torne-se um Caçador</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/tanjiro.png" alt="Tanjiro" class="img-fluid">
+                    <img src="./tanjiro.jpg" alt="Tanjiro" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -68,7 +75,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card character-card">
-                        <img src="images/tanjiro-card.jpg" class="card-img-top" alt="Tanjiro">
+                        <img src="./tanjiro2" class="card-img-top" alt="Tanjiro" width="350">
                         <div class="card-body">
                             <h5 class="card-title">Tanjiro Kamado</h5>
                             <p class="card-text">Protagonista da série e membro dos Caçadores de Demônios.</p>
@@ -78,7 +85,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card character-card">
-                        <img src="images/nezuko-card.jpg" class="card-img-top" alt="Nezuko">
+                        <img src="./nezuko.jpg" class="card-img-top" alt="Nezuko">
                         <div class="card-body">
                             <h5 class="card-title">Nezuko Kamado</h5>
                             <p class="card-text">Irmã mais nova de Tanjiro que foi transformada em demônio.</p>
@@ -88,7 +95,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card character-card">
-                        <img src="images/zenitsu-card.jpg" class="card-img-top" alt="Zenitsu">
+                        <img src="./zenitsu.jpg" class="card-img-top" alt="Zenitsu">
                         <div class="card-body">
                             <h5 class="card-title">Zenitsu Agatsuma</h5>
                             <p class="card-text">Caçador de Demônios e companheiro de Tanjiro.</p>
@@ -105,7 +112,7 @@
         <div class="container">
             <h2 class="mb-4">Interessado em saber mais?</h2>
             <p class="lead mb-5">Entre em contato conosco para receber mais informações sobre o mundo de Demon Slayer!</p>
-            <button id="contact-btn" class="btn btn-primary btn-lg">Entrar em Contato</button>
+            <a href="contato.html" id="contact-btn" class="btn btn-primary btn-lg">Entrar em Contato</a>
         </div>
     </section>
 
